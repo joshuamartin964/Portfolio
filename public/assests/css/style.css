@@ -59,7 +59,7 @@ html {
   content: '';
   display: block;
   height: 5px;
-  background-color: #444;
+  background-color: #f5f5f5;
   top: 0;
   width: 0;
   -webkit-transition: all ease-in-out 250ms;
@@ -72,7 +72,7 @@ html {
 #active {
   display: block;
   height: 5px;
-  background-color: #444;
+  background-color: #f5f5f5;
   top: 0;
   width: 100%;
 }
