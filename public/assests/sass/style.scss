@@ -17,13 +17,17 @@ html{
     box-sizing: inherit;
     letter-spacing: 1.7px;
     text-shadow: 2px 1px 5px #000;
+    color: $font-color;
+}
+
+body{
+    background: #020024;
+    background: linear-gradient(to right, #020024 0%, #790909 50%, #7e0075 100%);
 }
 
 .wrapper{
-    height: 100vh;
+    height: 100%;
     width: 100%;
-    background: #020024;
-    background: linear-gradient(to right, #020024 0%, #790909 50%, #7e0075 100%);
 }
 
 // Navigation Bar
@@ -34,7 +38,6 @@ html{
     height: 10vh;
     margin: 0 100px;
     padding-top: 50px;
-    color: #f5f5f5;
 }
 
 .nav-links{
@@ -49,13 +52,13 @@ html{
         position: relative;
     }
     a{
-        color: #f5f5f5;
+        color: $font-color;
         text-decoration: none;
         &::before{
             content: '';
             display: block;
             height: 5px;
-            background-color: #f5f5f5;
+            background-color: $font-color;
             width: 0;
             transition: all ease-in-out 250ms;
         }
@@ -70,6 +73,31 @@ html{
 #active{
     display: block;
     height: 5px;
-    background-color: #f5f5f5;
+    background-color: $font-color;
     width: 100%;
+}
+
+// About me section on the landing page
+.landing-page__about-me{
+    margin: 15% 100px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.landing-page__about-me-contain{
+    width: 50%;
+}
+
+.landing-page__about-me-title{
+    font-size: 3.5rem;
+}
+
+.landing-page__about-me-text{
+    margin-top: 30px;
+    line-height: 1.5rem;
+    font-size: 1.25rem;
+}
+
+.profile-picture{
+    border-radius: 50%;
 }
