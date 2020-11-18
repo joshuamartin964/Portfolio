@@ -48,30 +48,28 @@ html{
         display: inline;
         position: relative;
     }
-        a{
-            color: #f5f5f5;
-            text-decoration: none;
+    a{
+        color: #f5f5f5;
+        text-decoration: none;
+        &::before{
+            content: '';
+            display: block;
+            height: 5px;
+            background-color: #f5f5f5;
+            width: 0;
+            transition: all ease-in-out 250ms;
+        }
+        &:hover{
             &::before{
-                content: '';
-                display: block;
-                height: 5px;
-                background-color: #f5f5f5;
-                top: 0;
-                width: 0;
-                transition: all ease-in-out 250ms;
-            }
-            &:hover{
-                &::before{
-                    width: 100%;
-                }
+                width: 100%;
             }
         }
+    }
 }
 
 #active{
     display: block;
     height: 5px;
     background-color: #f5f5f5;
-    top: 0;
     width: 100%;
 }

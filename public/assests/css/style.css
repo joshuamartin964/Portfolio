@@ -60,7 +60,6 @@ html {
   display: block;
   height: 5px;
   background-color: #f5f5f5;
-  top: 0;
   width: 0;
   -webkit-transition: all ease-in-out 250ms;
   transition: all ease-in-out 250ms;
@@ -73,6 +72,5 @@ html {
   display: block;
   height: 5px;
   background-color: #f5f5f5;
-  top: 0;
   width: 100%;
 }
