@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="100px" height="100px" viewbox="0 0 100 100" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <path d="M0 0L100 0L100 100L0 100L0 0Z" id="path_1" />
+    <clipPath id="mask_1">
+      <use xlink:href="#path_1" />
+    </clipPath>
+  </defs>
+  <g id="Html-5-icon-2">
+    <path d="M0 0L100 0L100 100L0 100L0 0Z" id="Background" fill="none" fill-rule="evenodd" stroke="none" />
+    <g clip-path="url(#mask_1)">
+      <path d="M70.8333 0L0 0L6.25 70.8333L35.4167 79.1667L64.5833 70.8333L70.8333 0L70.8333 0L70.8333 0Z" transform="translate(14.5833435 10.4166565)" id="Shape" fill="#E65100" fill-rule="evenodd" stroke="none" />
+      <path d="M0 0L0 66.4583L23.3333 59.7917L28.5417 0L0 0Z" transform="translate(50 16.666656)" id="Shape" fill="#FF6D00" fill-rule="evenodd" stroke="none" />
+      <path d="M0 25L0 16.6667L17.9167 16.6667L16.4583 40.625L0 46.0417L0 37.2917L8.54167 34.375L9.16667 25L0 25L0 25ZM18.5417 8.33333L19.1667 0L0 0L0 8.33333L18.5417 8.33333L18.5417 8.33333Z" transform="translate(50 27.083344)" id="Shape" fill="#FFFFFF" fill-rule="evenodd" stroke="none" />
+      <path d="M18.9583 37.2917L18.9583 46.0417L2.49998 40.625L1.66664 29.1667L9.99998 29.1667L10.4166 34.375L18.9583 37.2917L18.9583 37.2917ZM8.75 8.33333L18.9583 8.33333L18.9583 0L0 0L1.45833 25L18.9583 25L18.9583 16.6667L9.375 16.6667L8.75 8.33333L8.75 8.33333Z" transform="translate(31.041656 27.083344)" id="Shape" fill="#EEEEEE" fill-rule="evenodd" stroke="none" />
+    </g>
+  </g>
+</svg>
