@@ -32,7 +32,7 @@ html {
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: 10vh;
-  padding: 0 100px;
+  padding: 0 5%;
   padding-top: 50px;
   background: -webkit-gradient(linear, left top, right top, from(#020024), color-stop(50%, #790909), to(#7e0075));
   background: linear-gradient(to right, #020024 0%, #790909 50%, #7e0075 100%);
@@ -75,7 +75,7 @@ html {
 }
 
 .landing-page__about-me {
-  padding: 300px 100px 60px;
+  padding: 300px 5% 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -87,13 +87,28 @@ html {
   background: -webkit-gradient(linear, left top, right top, from(#020024), color-stop(50%, #790909), to(#7e0075));
   background: linear-gradient(to right, #020024 0%, #790909 50%, #7e0075 100%);
 }
+@media screen and (max-width: 921px) {
+  .landing-page__about-me {
+    padding-top: 100px;
+  }
+}
 
 .landing-page__about-me-contain {
   width: 50%;
 }
+@media screen and (max-width: 921px) {
+  .landing-page__about-me-contain {
+    width: auto;
+  }
+}
 
 .landing-page__about-me-title {
   font-size: 3.5rem;
+}
+@media screen and (max-width: 921px) {
+  .landing-page__about-me-title {
+    font-size: 2.5rem;
+  }
 }
 
 .landing-page__about-me-text {
@@ -106,6 +121,12 @@ html {
   border-radius: 50%;
   margin-top: -60px;
 }
+@media screen and (max-width: 921px) {
+  .profile-picture {
+    width: 350px;
+    margin-top: 5vh;
+  }
+}
 
 .skills {
   display: grid;
@@ -114,6 +135,18 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 35px 100px;
+  padding: 35px 5%;
   background-color: #b8b8b8;
+}
+@media screen and (max-width: 921px) {
+  .skills {
+    grid-template-columns: 1fr;
+    row-gap: 50px;
+  }
+}
+
+@media screen and (max-width: 921px) {
+  .skill-logo {
+    width: 150px;
+  }
 }
