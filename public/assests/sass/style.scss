@@ -2,6 +2,7 @@
 
 $font-color: #f5f5f5;
 $secondry-color: #020024;
+$background: linear-gradient(to right, #020024 0%, #790909 50%, #7e0075 100%);
 
 *,
 *:before,
@@ -20,10 +21,6 @@ html{
     color: $font-color;
 }
 
-body{
-    background: #020024;
-    background: linear-gradient(to right, #020024 0%, #790909 50%, #7e0075 100%);
-}
 
 .wrapper{
     height: 100%;
@@ -36,8 +33,9 @@ body{
     display: flex;
     justify-content: space-between;
     height: 10vh;
-    margin: 0 100px;
+    padding: 0 100px;
     padding-top: 50px;
+    background: $background;
 }
 
 .nav-links{
@@ -79,9 +77,11 @@ body{
 
 // About me section on the landing page
 .landing-page__about-me{
-    margin: 15% 100px 0;
+    padding: 300px 100px 0;
     display: flex;
+    height: 100%;
     justify-content: space-between;
+    background: $background;
 }
 
 .landing-page__about-me-contain{
