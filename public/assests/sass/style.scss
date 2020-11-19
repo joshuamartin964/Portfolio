@@ -79,6 +79,7 @@ html{
 .landing-page__about-me{
     padding: 300px 100px 0;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     background: $background;
 }
@@ -104,10 +105,9 @@ html{
 // Skills section on the landing page
 .skills{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-    grid-gap: 50px;
-    justify-content: center;
-    align-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    justify-items: center;
+    align-items: center;
     padding: 35px 100px;
     background-color: #b8b8b8;
 }
