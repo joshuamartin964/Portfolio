@@ -3,7 +3,7 @@
 //Basic Variables
 $font-color: #f5f5f5;
 $secondry-color: #020024;
-$background: linear-gradient(to right, #020024 0%, #790909 50%, #7e0075 100%);
+$body-background: linear-gradient(153deg, #020024 0%, #790909 50%, #7e0075 100%);
 // Screen Sizes
 $iPhone: 921px;
 
@@ -25,6 +25,10 @@ html{
     color: $font-color;
 }
 
+body{
+    min-width: 320px;
+    background: $body-background;
+}
 
 .wrapper{
     height: 100%;
@@ -36,10 +40,10 @@ html{
     position: relative;
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
     height: 10vh;
     padding: 0 5%;
     padding-top: 50px;
-    background: $background;
 }
 
 .nav-links{
@@ -85,7 +89,6 @@ html{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    background: $background;
     @media screen and (max-width: $iPhone){
         padding-top: 100px;
     }
