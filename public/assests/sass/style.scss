@@ -156,10 +156,11 @@ body{
 
 // About me section on the landing page
 .landing-page__about-me{
-    padding: 300px 5% 60px;
+    padding: 400px 5% 60px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    height: calc(100vh - 10vh);
     @media screen and (max-width: $iPhone){
         padding-top: 100px;
     }
