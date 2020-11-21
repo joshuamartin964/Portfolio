@@ -13,8 +13,8 @@ html {
   font-family: 'Roboto', sans-serif;
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
-  letter-spacing: 1.7px;
-  text-shadow: 2px 1px 5px #000;
+  letter-spacing: 2.5px;
+  text-shadow: 1px 1px 2px #292929;
   color: #f5f5f5;
 }
 
@@ -66,12 +66,18 @@ body {
       -ms-flex-align: baseline;
           align-items: baseline;
   height: 10vh;
-  padding: 0 5%;
+  padding: 50px 5% 0;
   padding-top: 50px;
 }
 @media screen and (max-width: 921px) {
   .nav-bar {
     padding: 0;
+  }
+}
+
+@media screen and (max-width: 921px) {
+  .logo {
+    padding: 50px 5% 0;
   }
 }
 
@@ -193,11 +199,11 @@ body {
 }
 
 .landing-page__about-me-title {
-  font-size: 3.5rem;
+  font-size: 4rem;
 }
 @media screen and (max-width: 921px) {
   .landing-page__about-me-title {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
   }
 }
 
@@ -247,5 +253,31 @@ body {
 @media screen and (max-width: 921px) {
   .skill-logo {
     width: 150px;
+  }
+}
+
+.projects {
+  padding: 5%;
+}
+
+.projects-title {
+  font-size: 2.6rem;
+}
+
+.projects-intro {
+  margin-top: 30px;
+  width: 75%;
+  line-height: 1.5rem;
+  font-size: 1.25rem;
+}
+@media screen and (max-width: 921px) {
+  .projects-intro {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 921px) {
+  svg {
+    width: 300px;
   }
 }

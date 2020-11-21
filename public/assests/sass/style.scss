@@ -5,8 +5,9 @@ $font-color: #f5f5f5;
 $secondry-color: #020024;
 $body-background: linear-gradient(333deg, #020024 0%, #790909 50%, #7e0075 100%);
 $hamburger-color: #0c0957;
+$width: 5%;
 // Screen Sizes
-$iPhone: 921px;
+$phone: 921px;
 
 
 *,
@@ -21,8 +22,8 @@ html{
     font-size: 18px;
     font-family: 'Roboto', sans-serif;
     box-sizing: inherit;
-    letter-spacing: 1.7px;
-    text-shadow: 2px 1px 5px #000;
+    letter-spacing: 2.5px;
+    text-shadow: 1px 1px 2px #292929;
     color: $font-color;
 }
 
@@ -42,7 +43,7 @@ body{
 // Menu button styling for mobile's 
 .hamburger{
     display: none;
-    @media screen and (max-width: $iPhone){
+    @media screen and (max-width: $phone){
         display: block;
         position: fixed;
         cursor: pointer;
@@ -56,7 +57,7 @@ body{
 }
 
 .line{
-    @media screen and (max-width: $iPhone){
+    @media screen and (max-width: $phone){
         width: 40px;
         height: 6px;
         background: white;
@@ -71,10 +72,16 @@ body{
     justify-content: space-between;
     align-items: baseline;
     height: 10vh;
-    padding: 0 5%;
+    padding: 50px $width 0;
     padding-top: 50px;
-    @media screen and (max-width: $iPhone){
+    @media screen and (max-width: $phone){
         padding: 0;
+    }
+}
+
+.logo{
+    @media screen and (max-width: $phone){
+        padding: 50px $width 0;
     }
 }
 
@@ -84,7 +91,7 @@ body{
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 20px;
     justify-items: center;
-    @media screen and (max-width: $iPhone){
+    @media screen and (max-width: $phone){
         position: fixed;
         background: $hamburger-color;
         height: 100vh;
@@ -103,7 +110,7 @@ body{
         display: inline;
         position: relative;
         height: 10px;
-        @media screen and (max-width: $iPhone){
+        @media screen and (max-width: $phone){
             font-size: 1.8rem;
             opacity: 0;
             &:nth-child(1){
@@ -143,7 +150,7 @@ body{
 }
 
 .nav-links.open{
-    @media screen and (max-width: $iPhone){
+    @media screen and (max-width: $phone){
         clip-path: circle(800px at 90% -10%);        
     }
 }
@@ -157,12 +164,12 @@ body{
 
 // About me section on the landing page
 .landing-page__about-me{
-    padding: 400px 5% 60px;
+    padding: 400px $width 60px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     height: calc(100vh - 10vh);
-    @media screen and (max-width: $iPhone){
+    @media screen and (max-width: $phone){
         height: auto;
         padding-top: 100px;
     }
@@ -170,15 +177,15 @@ body{
 
 .landing-page__about-me-contain{
     width: 50%;
-    @media screen and (max-width: $iPhone){
+    @media screen and (max-width: $phone){
         width: auto;
     }
 }
 
 .landing-page__about-me-title{
-    font-size: 3.5rem;
-    @media screen and (max-width: $iPhone){
-        font-size: 2.5rem;
+    font-size: 4rem;
+    @media screen and (max-width: $phone){
+        font-size: 2.8rem;
     }
 }
 
@@ -190,7 +197,7 @@ body{
 
 .pp-contain{
     margin-top: -60px;
-    @media screen and (max-width: $iPhone){
+    @media screen and (max-width: $phone){
         margin: 8vh auto 3vh;
         align-self: center;
     }
@@ -198,7 +205,7 @@ body{
 
 .profile-picture{
     border-radius: 50%;
-    @media screen and (max-width: $iPhone){
+    @media screen and (max-width: $phone){
         width: 350px;
     }
 }
@@ -211,14 +218,39 @@ body{
     align-items: center;
     padding: 35px 5%;
     background-color: #b8b8b8;
-    @media screen and (max-width: $iPhone){
+    @media screen and (max-width: $phone){
         grid-template-columns: 1fr;
         row-gap: 50px;
     }
 }
 
 .skill-logo{
-    @media screen and (max-width: $iPhone){
+    @media screen and (max-width: $phone){
         width: 150px;
+    }
+}
+
+//Projects Section
+.projects{
+    padding: $width;
+}
+
+.projects-title{
+    font-size: 2.6rem;
+}
+
+.projects-intro{
+    margin-top: 30px;
+    width: 75%;
+    line-height: 1.5rem;
+    font-size: 1.25rem;
+    @media screen and (max-width: $phone){
+        width: 100%;
+    }
+}
+
+svg{
+    @media screen and (max-width: $phone){
+        width: 300px;
     }
 }
