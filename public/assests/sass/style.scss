@@ -3,7 +3,8 @@
 //Basic Variables
 $font-color: #f5f5f5;
 $secondry-color: #020024;
-$body-background: linear-gradient(153deg, #020024 0%, #790909 50%, #7e0075 100%);
+$body-background: linear-gradient(333deg, #020024 0%, #790909 50%, #7e0075 100%);
+$hamburger-color: #0c0957;
 // Screen Sizes
 $iPhone: 921px;
 
@@ -48,7 +49,7 @@ body{
         top: 5%;
         right: 5%;
         z-index: 99;
-        background: #7e0075;
+        background: $hamburger-color;
         border-radius: 50%;
         padding: 8px 5px;
     }
@@ -85,7 +86,7 @@ body{
     justify-items: center;
     @media screen and (max-width: $iPhone){
         position: fixed;
-        background: #7e0075;
+        background: $hamburger-color;
         height: 100vh;
         width: 100%;
         grid-template-columns: 1fr;
@@ -162,6 +163,7 @@ body{
     justify-content: space-between;
     height: calc(100vh - 10vh);
     @media screen and (max-width: $iPhone){
+        height: auto;
         padding-top: 100px;
     }
 }
@@ -186,12 +188,18 @@ body{
     font-size: 1.25rem;
 }
 
-.profile-picture{
-    border-radius: 50%;
+.pp-contain{
     margin-top: -60px;
     @media screen and (max-width: $iPhone){
+        margin: 8vh auto 3vh;
+        align-self: center;
+    }
+}
+
+.profile-picture{
+    border-radius: 50%;
+    @media screen and (max-width: $iPhone){
         width: 350px;
-        margin-top: 5vh;
     }
 }
 
