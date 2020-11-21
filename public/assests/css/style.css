@@ -84,7 +84,7 @@ body {
 .nav-links {
   position: relative;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
   justify-items: center;
 }
@@ -276,8 +276,26 @@ body {
   }
 }
 
+.coming-soon {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px;
+}
 @media screen and (max-width: 921px) {
-  svg {
-    width: 300px;
+  .coming-soon {
+    grid-template-columns: 1fr;
+    grid-gap: 25px;
+    margin: 50px 0;
+    justify-items: center;
+  }
+}
+
+@media screen and (max-width: 921px) {
+  .coming-svg {
+    width: calc(100vw - 40px);
   }
 }

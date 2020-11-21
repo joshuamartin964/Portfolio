@@ -88,7 +88,7 @@ body{
 .nav-links{
     position: relative;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
     justify-items: center;
     @media screen and (max-width: $phone){
@@ -249,8 +249,23 @@ body{
     }
 }
 
-svg{
+.coming-soon{
+    width: max-content;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
     @media screen and (max-width: $phone){
-        width: 300px;
+        // width: 50%;
+        grid-template-columns: 1fr;
+        grid-gap: 25px;
+        margin: 50px 0;
+        justify-items: center;
+    }
+}
+
+.coming-svg{
+    @media screen and (max-width: $phone){
+        width: calc(100vw - 40px);
     }
 }
