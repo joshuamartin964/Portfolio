@@ -299,3 +299,12 @@ body {
     width: calc(100vw - 40px);
   }
 }
+
+footer {
+  padding: 0 5%;
+}
+
+.contact-me {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}

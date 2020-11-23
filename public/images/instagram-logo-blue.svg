@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="33px" height="33px" viewbox="0 0 33 33" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="filter_1">
+      <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0 0 0 0 0 0.03529412 0 0 0 0 1 0 0 0 1 0" />
+    </filter>
+    <path d="M0 0L33 0L33 33L0 33L0 0Z" id="path_1" />
+    <clipPath id="mask_1">
+      <use xlink:href="#path_1" />
+    </clipPath>
+  </defs>
+  <g id="Instagram-icon-3" filter="url(#filter_1)">
+    <path d="M0 0L33 0L33 33L0 33L0 0Z" id="Background" fill="none" fill-rule="evenodd" stroke="none" />
+    <g clip-path="url(#mask_1)">
+      <path d="M6.875 0C3.07862 0 0 3.07862 0 6.875L0 17.875C0 21.6714 3.07862 24.75 6.875 24.75L17.875 24.75C21.6714 24.75 24.75 21.6714 24.75 17.875L24.75 6.875C24.75 3.07862 21.6714 0 17.875 0L6.875 0L6.875 0ZM20.625 2.75C21.384 2.75 22 3.366 22 4.125C22 4.884 21.384 5.5 20.625 5.5C19.866 5.5 19.25 4.884 19.25 4.125C19.25 3.366 19.866 2.75 20.625 2.75L20.625 2.75ZM12.375 5.5C16.1714 5.5 19.25 8.57863 19.25 12.375C19.25 16.1714 16.1714 19.25 12.375 19.25C8.57863 19.25 5.5 16.1714 5.5 12.375C5.5 8.57863 8.57863 5.5 12.375 5.5L12.375 5.5ZM12.375 8.25C10.0968 8.25 8.25 10.0968 8.25 12.375C8.25 14.6532 10.0968 16.5 12.375 16.5C14.6532 16.5 16.5 14.6532 16.5 12.375C16.5 10.0968 14.6532 8.25 12.375 8.25L12.375 8.25Z" transform="translate(4.125 4.125)" id="Shape" fill="#FFFFFF" fill-rule="evenodd" stroke="none" />
+    </g>
+  </g>
+</svg>

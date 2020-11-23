@@ -269,3 +269,13 @@ body{
         width: calc(100vw - 40px);
     }
 }
+
+// Footer Stylings
+footer{
+    padding: 0 $width;
+}
+
+.contact-me{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
