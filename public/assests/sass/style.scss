@@ -273,7 +273,7 @@ body{
 // Footer Stylings
 footer{
     padding: 50px $width 20px;
-    background: #b8b8b8;
+    background: $secondry-color;
     h2{
         font-size: 2.6rem;
     }
@@ -291,28 +291,80 @@ footer{
 .form-container{
     justify-self: center;
     width: 90%;
+    span{
+        font-size: 1.2rem;
+        @media screen and (max-width: $phone){
+            font-size: 2rem;
+        }
+    }
     @media screen and (max-width: $phone){
-        width: 50%;
+        width: 100%;
         justify-self: auto;
     }
 }
 
 form{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
-    @media screen and (max-width: $phone){
-        grid-template-columns: 1fr;
-    }
-    input{
-        font-size: .9rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-around;
+    max-width: 725.7px;
+    input[type=text]{
+        font-size: .97rem;
+        font-weight: 400;
+        height: 50px;
+        background: none;
+        border: 1px #cf00c1 solid;
+        margin: 5px 0;
+        padding: 0 20px;
+        color: $font-color;
+        &::placeholder{
+            color: $font-color;
+            opacity: 1;
+        }
+        @media screen and (max-width: $phone){
+            height: 75px;
+        }
     }
 }
 
 .message{
-    grid-column: span 2;
     height: 150px;
-    font-size: .9rem;
+    width: 100%;
+    resize: vertical;
+    overflow: auto;
+    font-size: .97rem;
     font-family: inherit;
+    background: none;
+    border: 1px #cf00c1 solid;
+    margin: 5px 0;
+    padding: 10px 20px;
+    color: $font-color;
+    &::placeholder{
+        margin-top: 5px;
+        color: $font-color;
+        opacity: 1;
+    }
+    @media screen and (max-width: $phone){
+        height: 200px;
+    }
 }
 
+.send-btn{
+    font-size: .97rem;
+    font-family: inherit;
+    background: #cf00c1;
+    border: 1px #a8009d solid;
+    border-radius: 3px;
+    margin: 5px 0;
+    padding: 15px;
+    color: $font-color;
+    width: max-content;
+    cursor: pointer;
+    @media screen and (max-width: $phone){
+        width: 100%;
+        font-size: 1.2rem;
+        padding: 20px 15px;
+    }
+}
