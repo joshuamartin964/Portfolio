@@ -301,10 +301,52 @@ body {
 }
 
 footer {
-  padding: 0 5%;
+  padding: 50px 5% 20px;
+  background: #b8b8b8;
+}
+footer h2 {
+  font-size: 2.6rem;
 }
 
 .contact-me {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-gap: 100px;
+}
+@media screen and (max-width: 921px) {
+  .contact-me {
+    grid-template-columns: 1fr;
+  }
+}
+
+.form-container {
+  justify-self: center;
+  width: 90%;
+}
+@media screen and (max-width: 921px) {
+  .form-container {
+    width: 50%;
+    justify-self: auto;
+  }
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+@media screen and (max-width: 921px) {
+  form {
+    grid-template-columns: 1fr;
+  }
+}
+form input {
+  font-size: .9rem;
+}
+
+.message {
+  grid-column: span 2;
+  height: 150px;
+  font-size: .9rem;
+  font-family: inherit;
 }
